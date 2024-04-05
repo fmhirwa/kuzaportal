@@ -1,0 +1,135 @@
+/* HomePage.css */
+.home {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* ... other styles ... */
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .search-bar input,
+  .search-bar button {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .search-bar input {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+  }
+  
+  .search-bar button {
+    background-color: #4CAF50; /* Color from the inspiration image */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .featured-jobs {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .featured-jobs h2 {
+    color: #4CAF50; /* Color from the inspiration image */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .job {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .job h3 {
+    margin-top: 0;
+  }
+  
+  /* HomePage.css */
+/* ... other styles ... */
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-list li a:hover, .nav-list li a:focus {
+    background-color: #4CAF50; /* Color from the inspiration image */
+    color: white;
+  }
+  
+  /* ... other styles ... */
+
+  
+  /* Responsive styles and other details would be added as needed */
+  #demoFont {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 27px;
+    letter-spacing: 1.2px;
+    word-spacing: 0px;
+    color: #4CAF50;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    }
+    .logo {
+      max-width: 100%;
+      height: auto;
+      align-items: center;
+      display: none;
+    }
+
+    .job-listings .job:hover {
+      background-color: rgb(191, 238, 191);
+    }
+
+    .job-listings .job:active {
+      transform: scale(0.95);
+    }
+
+    .job-listings .job:hover h3 {
+      color: #e7f5e7; /* Color from the inspiration image */
+    }
+
+    .job-listings .job:active h3 {
+      color: #09ff00; /* Color for active state */
+    }
+
+    .my-image {
+      background-image: url('../components/newkazi-ni-kazi-image.jpeg'); /* Assuming logo.png is in the same directory */
+      max-width: 100%;
+      height: auto;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
