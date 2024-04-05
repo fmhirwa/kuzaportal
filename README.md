@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+### Project Summary: Kazi ni Kazi Job Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Kazi ni Kazi project aims to develop a comprehensive job portal specifically designed to bridge the gap between job seekers and employers. The platform facilitates the discovery of employment opportunities, submission of job applications, and posting of new job openings by employers. It targets a wide range of users, including recent graduates, experienced professionals, and companies across various industries.
 
-## Available Scripts
+### System Design Overview
 
-In the project directory, you can run:
+#### Frontend
 
-### `npm start`
+- **Framework:** The frontend is built using React, leveraging its component-based architecture for a modular and interactive user interface.
+- **Pages and Components:**
+  - **HomePage:** Serves as the landing page, highlighting the platform's features, showcasing featured jobs, and providing navigation to other sections.
+  - **JobListingsPage:** Displays a list of available jobs which users can filter based on parameters like job title, salary range, and job type. It fetches job listings dynamically from the backend.
+  - **JobDetailPage:** Provides detailed information about a specific job posting, including the job description, company overview, and an "Apply" button.
+  - **PostJobPage:** Available for employers to submit new job postings through a form specifying job details such as title, description, salary, and duration.
+- **Styling:** CSS modules are used for styling components, ensuring a responsive and visually appealing layout across devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Backend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Technology:** Node.js with the Express framework is used to create RESTful APIs that handle requests from the frontend.
+- **Database:** MongoDB, a NoSQL database, stores job listings, user profiles, and application details. Mongoose ODM is utilized for database schema definition and data management.
+- **Authentication:** Future implementations will include user authentication and authorization mechanisms to support secure access to specific functionalities, such as job posting and application submission.
 
-### `npm test`
+#### Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Dynamic Job Listings:** Users can search and filter jobs based on various criteria. The backend supports these operations by querying the MongoDB database.
+- **Job Application:** Job seekers can apply for jobs directly through the platform. Applied jobs and the status of applications can be tracked in the user's profile.
+- **Job Posting:** Employers can create and manage their job postings, including editing and removing listings as needed.
 
-### `npm run build`
+#### Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The application is deployed to a firebase for dynamic scaling to accommodate varying loads.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Future Enhancements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **User Profiles:** Implementing comprehensive profiles for job seekers to include resumes, skills, experience, and education.
+- **Employer Profiles:** Allowing companies to create profiles showcasing their culture, values, and all job openings.
+- **Notifications:** Email notifications for job seekers about new job postings that match their profiles and updates on their application statuses.
+- **Analytics:** Providing analytics for employers on the number of applications received, views on job postings, and the effectiveness of their listings.
