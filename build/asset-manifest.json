@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.712616ee.css",
+    "main.js": "/static/js/main.c72ea3c1.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/newkazi-ni-kazi-image.jpeg": "/static/media/newkazi-ni-kazi-image.fbb278260986145d1938.jpeg",
+    "index.html": "/index.html",
+    "main.712616ee.css.map": "/static/css/main.712616ee.css.map",
+    "main.c72ea3c1.js.map": "/static/js/main.c72ea3c1.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.712616ee.css",
+    "static/js/main.c72ea3c1.js"
+  ]
+}
